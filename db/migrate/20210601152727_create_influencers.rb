@@ -5,7 +5,6 @@ class CreateInfluencers < ActiveRecord::Migration[6.0]
       t.references :platform, null: false, foreign_key: true
       t.bigint :followers
       t.string :profile_pic_url
-      t.bigint :tag_ids, array: true, default: []
       t.bigint :primary_tag_id, null: false
       t.timestamps
     end

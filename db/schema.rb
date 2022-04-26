@@ -28,7 +28,6 @@ ActiveRecord::Schema[7.0].define(version: 2021_06_01_152810) do
     t.integer "platform_id", null: false
     t.bigint "followers"
     t.string "profile_pic_url"
-    t.bigint "tag_ids", default: [], array: true
     t.bigint "primary_tag_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
