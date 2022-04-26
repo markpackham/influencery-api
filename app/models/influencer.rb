@@ -7,6 +7,7 @@ class Influencer < ApplicationRecord
   validates :followers, presence: true
   snare = true
 
-  # def tag_ids()
+  # when influencer.tag_ids is called in seed need to populate influencer_tags table
+  # def tag_ids(influencer_id, tag_id)
   # end
 end
