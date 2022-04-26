@@ -1,6 +1,6 @@
 class Influencer < ApplicationRecord
   belongs_to :platform
-  has_many :tag_ids, through: :influencer_tags
+  has_many :tag_ids, through: :influencer_tag
 
   validates :handle, presence: true
   validates :primary_tag_id, presence: true
