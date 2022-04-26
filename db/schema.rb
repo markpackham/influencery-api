@@ -24,6 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2021_06_01_152810) do
   end
 
   create_table "influencers", force: :cascade do |t|
+    t.integer "primary_tag_id", null: false
     t.string "handle"
     t.integer "platform_id", null: false
     t.integer "followers"
