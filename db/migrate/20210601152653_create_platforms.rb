@@ -3,7 +3,6 @@ class CreatePlatforms < ActiveRecord::Migration[6.0]
     create_table :platforms do |t|
       t.string :name
       t.string :base_url
-
       t.timestamps
     end
   end

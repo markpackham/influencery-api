@@ -6,4 +6,6 @@ class Influencer < ApplicationRecord
   validates :primary_tag_id, presence: true
   validates :followers, presence: true
   snare = true
+
+  def
 end
