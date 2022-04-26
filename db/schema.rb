@@ -24,12 +24,12 @@ ActiveRecord::Schema[7.0].define(version: 2021_06_01_152810) do
   end
 
   create_table "influencers", force: :cascade do |t|
-    t.integer "primary_tag_id", null: false
     t.string "handle"
     t.integer "platform_id", null: false
-    t.integer "followers"
+    t.bigint "followers"
     t.string "profile_pic_url"
-    t.integer "tag_ids", default: [], array: true
+    t.bigint "tag_ids", default: [], array: true
+    t.bigint "primary_tag_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["platform_id"], name: "index_influencers_on_platform_id"
