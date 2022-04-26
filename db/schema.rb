@@ -29,6 +29,7 @@ ActiveRecord::Schema[7.0].define(version: 2021_06_01_152810) do
     t.integer "platform_id", null: false
     t.integer "followers"
     t.string "profile_pic_url"
+    t.integer "tag_ids", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["platform_id"], name: "index_influencers_on_platform_id"
